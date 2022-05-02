@@ -1,0 +1,117 @@
+#admin-nav {
+    position: relative;
+}
+
+#admin-name {
+    position: absolute;
+    top: 0;
+    right: 0;
+	padding-top: 10px;
+}
+
+#admin-name:hover .logout {
+
+    display: block;
+}
+
+#admin-name .logout {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+#admin-name .logout a:hover {
+    text-decoration: none;
+}
+
+.navigation-header {
+    top: 0;
+    width: 100%;
+    height: 68px;
+    margin: 0;
+    z-index: 600;
+}
+
+.page-wrapper{
+	display: flex;
+	min-height: 0;
+	height: 50%;
+}
+
+@media only screen and (max-width: 1025px){
+.page-wrapper {
+    margin-top: 0px;
+}
+}
+
+.page-wrapper .left-sidebar{
+	position: relative;
+	top: -58px;
+	flex: 2;
+	background:#0444A3;
+	min-height: 0;
+	height: 179%;
+}
+
+.page-wrapper .left-sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+	border: 1px solid #012960;
+}
+
+.page-wrapper .left-sidebar ul li a {
+    font-size: 1.1em;
+    display: block;
+    color: white;
+    padding: 20px;
+    border-bottom: 1px solid #012960;
+}
+
+.page-wrapper .left-sidebar ul li a:hover {
+    background: #012960;
+}
+
+.page-wrapper .admin-content{
+	flex: 8;
+    min-height: 0;
+	height: 150%;
+	padding: 40px 100px;
+    overflow-y: scroll;
+}
+
+.page-wrapper .admin-content .admin-buttons {
+    text-align: center;
+}
+
+.page-wrapper .admin-content .admin-buttons a {
+    margin: 0 25px;
+}
+
+.page-wrapper .admin-content .content h2 {
+    margin: 1.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.page-wrapper .admin-content .content ul {
+    list-style: none;
+    width: 60%;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1em;
+}
+
+th,
+td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #6c757d;
+}

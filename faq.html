@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta http-equiv="X-ua-compatible" content="ie=edge" />
+
+    <title>Healthcare at your convinience</title>
+
+    <!-- css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="plugins/cubeportfolio/css/cubeportfolio.min.css" />
+    <link href="css/nivo-lightbox.css" rel="stylesheet" />
+    <link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.carousel.css" rel="stylesheet" media="screen" />
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- boxed bg -->
+    <link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
+    <!-- template skin -->
+    <link id="t-colors" href="color/default.css" rel="stylesheet" />
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+    <div id="wrapper">
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="top-area">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-sm-6 col-md-6">
+                            <div class="text-right">
+                                <label for="newsletter">Need help purchasing a health plan ?</label>&nbsp
+                                <a href="#appointment-modal" class="btn btn-danger btn-md" data-toggle="modal" data-target="#appointment-modal">Book an appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container navigation">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.php">
+                        <img src="img/expressLogo.png" alt="" width="150" height="50" />
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.php#ourservice">Our Services</a></li>
+                        <li><a href="community.php">OUR NGO</a></li>
+                        <li><a href="healthtips.php">BLOG</a></li>
+                        <li class="login-navbar"><a class="nav-link" href="./login.php">LOGIN&nbsp;<i class=" fa fa-lock"></i></a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!-- main body code of webpage -->
+        <section id="intro" class="intro">
+            <div class="intro-content">
+                <div class="container">
+                    <!-- Login Modal Form goes here -->
+
+                    <!-- Login Modal Form goes here -->
+
+                    <!--Appointment Modal goes here -->
+                    <div class="modal fade" id="appointment-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog">
+                            <div class="panel panel-skin">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">
+                                        <span class="fa fa-pencil-square-o"></span> Book an appoinment <small class="free-appointment text-info">(It's free!)</small>
+                                    </h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div id="sendmessage">
+                                        Your message has been sent. Thank you!
+                                    </div>
+                                    <div id="errormessage"></div>
+
+                                    <form action="process.php" method="post" role="form" class="contactForm lead">
+                                        <div class="row">
+                                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                                <div class="form-group">
+                                                    <label>First Name</label>
+                                                    <input type="text" name="first_name" id="first_name" class="form-control input-md" data-rule="minlen:3" data-msg="Please enter at least 3 chars" />
+                                                    <div class="validation"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                                <div class="form-group">
+                                                    <label>Last Name</label>
+                                                    <input type="text" name="last_name" id="last_name" class="form-control input-md" data-rule="minlen:3" data-msg="Please enter at least 3 chars" />
+                                                    <div class="validation"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                                <div class="form-group">
+                                                    <label>Email</label>
+                                                    <input type="email" name="email" id="email" class="form-control input-md" data-rule="email" data-msg="Please enter a valid email" />
+                                                    <div class="validation"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                                <div class="form-group">
+                                                    <label>Phone number</label>
+                                                    <input type="text" name="phone" id="phone" class="form-control input-md" data-rule="required" data-msg="The phone number is required" />
+                                                    <div class="validation"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button type="submit" name="submit" class="btn btn-skin btn-block btn-lg">
+                                            SUBMIT
+                                        </button>
+
+                                        <p class="lead-footer">
+                                            *we will contact you shortly after your booking*
+                                        </p>
+                                        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal">
+                                            close
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Appointment Modal goes here -->
+
+                    <!--Signup Modal Form goes here -->
+
+                    <!--Signup Modal Form goes here -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInDown" data-wow-offset="0" data-wow-delay="0.1s">
+                                <h2 class="h-ultra text-center">
+                                    Frequently Asked Questions
+                                </h2>
+                                <hr id="activities" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="callaction" class="home-section paddingtop-40">
+            <div class="container">
+                <div class="callaction bg-gray">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="text-center text-info">Booking an Appointment</h3>
+
+                            <h5>How can I book an appointment?</h5>
+                            <p>
+                                You can book an appointment
+                                <a class="faq reg" href="#">here</a>, use our
+                                <a class="faq" href="#">app</a>, by shortcode(<a class="faq" href="#">*714*33*34#</a>) or call us on
+                                <a class="faq" href="#">0542053335 / 0202660061</a>.
+                            </p>
+
+                            <h5>How soon can I be attended to by a doctor ?</h5>
+                            <p>
+                                Our doctors will attend to you in realtime using our digital platforms. For physical consultation, our doctors will attend to you within 24 hours.
+                            </p>
+
+                            <h5>Can I get Emergency Treatment?</h5>
+                            <p>
+                                Currently, we do not attend to emergency conditions. If you require emergency treatment, please call 193 or contact your local Accident and Emergency center.
+                            </p>
+                            <h5>How are my medical Records stored?</h5>
+                            <p>
+                                Your medical records are stored in a secured and confidential electronic health management system.
+                            </p>
+                            <h5>
+                                What electronic device do I need to book an appointment?
+                            </h5>
+                            <p>
+                                All you need is at least a mobile phone, tablet or computer system.
+                            </p>
+                            <h5>Can ExpressMed treat children?</h5>
+                            <p>
+                                Yes, our qualified and professional paediatricians treats children below 18 years under the supervision of their parent or guardian.
+                            </p>
+                            <h5>Where and when can I request ExpressMed service?</h5>
+                            <p>
+                                Through our digital platforms you can have access to our services regardless of your location. Home visits are currently available only in Accra with appointment.
+                                <a class="faq" href="#">Register Now</a> and be the first to know when ExpressMed comes to your area.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Payment And Cancellation Section-->
+        <section class="home-section paddingtop-40">
+            <div class="container">
+                <div class="callaction bg-gray">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="text-center text-info">Payment and Cancellation</h3>
+                            <h5>How do I pay?</h5>
+                            <p>
+                                Services are paid for once an appointment is booked or through subscription over a period.
+                            </p>
+                            <h5>How much does ExpressMed cost?</h5>
+                            <p>
+                                There are different prices for our various services. Get in touch with us and access all the information you need.
+                            </p>
+                            <h5>Does ExpressMed accept insurance?</h5>
+                            <p>
+                                As an out-of-network provider, ExpressMed does not currently accept insurance, however, we are working on providing a solution to this
+                            </p>
+                            <h5>What happens if I need to cancel my appointment?</h5>
+                            <p>
+                                If you cancel a visit less than 3 minutes after a doctor is dispatched to your location or digitally assigned to you, you will not be charged anything. If you cancel more than 5 minutes after the doctor is dispatched, you will be charged 50% of the appointment
+                                fee.
+                            </p>
+                            <h5>Will insurance cover my medical expenses ?</h5>
+                            <p>
+                                We currently do not accept insurance. We are working on an insurance cover plan for our clients. Be the first to know about our insurance plan,
+                                <a href="#" style="color: red; text-decoration: underline;">subscribe now</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--During Appointment-->
+        <section class="home-section paddingtop-40">
+            <div class="container">
+                <div class="callaction bg-gray">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="text-center text-info">During Your Appointment</h3>
+                            <h5>How long are the appointments?</h5>
+                            <p>
+                                We offer appointment lengths to suit you. Your paid
+                                consultation will be up to a maximum of 2 hours. You can, of
+                                course, take more time with the doctor or even ask the doctor
+                                to see another member of your family/friends. Extra time or
+                                patients will incure additional charges. However, your doctor
+                                will notify you of these beforehand
+                            </p>
+                            <h5>Where does the visit take place?</h5>
+                            <p>
+                                Our professional doctors will see you at your convenience; on
+                                your mobile device or in the comfort of your home or office.
+                                Some privacy is necessary when considering an appointment.
+                            </p>
+                            <h5>
+                                If I book an appointment with ExpressMed, who will be treating
+                                me?
+                            </h5>
+                            <p>
+                                ExpressMed doctors are registered with the Ghana Medical and
+                                Dental council, certified adult and family practitioners with
+                                years of experience in their fields. Each of our professional
+                                medical team undergoes a rigorous screening process which
+                                includes a background check and an interview with our clinical
+                                leads. Our clinical team carefully supervises the level of
+                                care provided by practitioners and ask for satisfaction from
+                                clients.
+                            </p>
+                            <h5>What if I need a procedure, blood tests labs or x-rays?</h5>
+                            <p>
+                                Ours doctors will come to your home with everything you need
+                                for a thorough visit. Basic labs can be done for you at home
+                                too. If you require additional procedures or x-rays that
+                                cannot be done in the home, ExpressMed will refer you to the
+                                nearest Medical Centre which can best meet your needs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--After Your Appointment-->
+        <section class="home-section paddingtop-40">
+            <div class="container">
+                <div class="callaction bg-gray">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="text-center text-info">After Your Appointment</h3>
+                            <h5>What about prescription?</h5>
+                            <p>
+                                We will provide private prescriptions. These can be dispensed
+                                at any pharmacy or you can use our medication delivery service
+                                to receive your prescription within 2 hours.
+                            </p>
+                            <h5>Do the doctors carry prescription drugs?</h5>
+                            <p>
+                                ExpressMed doctors do not carry, prescribe or dispense
+                                narcotic pain medications or other controlled substances.
+                            </p>
+                            <h5>Do ExpressMed doctors make referrals?</h5>
+                            <p>
+                                Your care may require some additional services or treatment
+                                outside the customary house call. Your doctor will notify you
+                                of any recommended additional services at the time of your
+                                visit. Referrals for additional care from other health care
+                                providers or institutions are at the discretion of your
+                                doctor.
+                            </p>
+                            <h5>How do I give feedback after my consultation?</h5>
+                            <p>
+                                After your consultation is completed, ExpressMed will contact
+                                you through telephone call, email, or the app will prompt you
+                                to provide feedback and rate your doctor. We are continually
+                                aiming to provide high levels of patient satisfaction. We
+                                would be grateful if you could take the time to tell us your
+                                experience after your appointment.
+                            </p>
+                            <h5>Will others be informed about my consultation?</h5>
+                            <p>
+                                Your consultation will remain confidential, unless you request
+                                a copy of the notes from the visit to pass on to your general
+                                practitioners.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="wow fadeInDown" data-wow-delay="0.1s">
+                            <div class="widget">
+                                <h5>Quick Links</h5>
+                                <hr class="cta" />
+                                <div class="social-update">
+                                    <a href="index.php"><strong>HOME</strong></a><br>
+                                    <a href="about.html"><strong>ABOUT US</strong></a><br>
+                                    <a href="community.php"><strong>OUR NGO</strong></a><br>
+                                    <a href="healthtips.php"><strong>BLOG</strong></a><br>
+                                    <a href="faq.html"><strong>FAQ</strong></a><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="wow fadeInDown" data-wow-delay="0.1s">
+                            <div class="widget">
+                                <h5>CONNECT WITH US</h5>
+                                <hr class="cta" />
+                                <ul>
+                                    <li>
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                                        </span> (+233) 542-053-335 / 202-660-061
+                                    </li>
+                                    <li>
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                        </span> expressmedgh@gmail.com
+                                    </li>
+                                    <br />
+                                    <li>
+                                        <h5>Get Our Newsletter</h5>
+                                        <hr class="cta" />
+                                        <form class="form-inline">
+                                            <input type="text" class="form-control form-control-sm" placeholder="Your email" arial-label="Your email" aria-describedby="basic-addon2" />
+                                            <button class="btn btn-sm btn-info" type="submit">
+                                                Subscribe
+                                            </button>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="wow fadeInDown" data-wow-delay="0.1s">
+                            <div class="widget">
+                                <h5>Our location</h5>
+                                <hr class="cta" />
+                                <p>B712/15 Adamu Lane Street, Russia - Accra</p>
+                            </div>
+                        </div>
+                        <div class="wow fadeInDown" data-wow-delay="0.1s">
+                            <div class="widget">
+                                <h5>Follow Us</h5>
+                                <hr class="cta" />
+                                <ul class="company-social">
+                                    <li class="social-facebook">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li class="social-twitter">
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li class="social-google">
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                    </li>
+                                    <li class="social-vimeo">
+                                        <a href="#"><i class="fa fa-youtube-square"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <div class="wow fadeInLeft" data-wow-delay="0.1s">
+                                <div class="text-left">
+                                    <p>
+                                        &copy;Copyright - ExpressMedGhana. All rights reserved.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <div class="wow fadeInRight" data-wow-delay="0.1s">
+                                <div class="text-right">
+                                    <div class="credits">
+                                        <!--
+                      All the links in the footer should remain intact. 
+                      You can delete the links only if you purchased the pro version.
+                      Licensing information: https://bootstrapmade.com/license/
+                      Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Medicio
+                    -->
+                                        Designed by <a href="https://webspace360.com/">Webspace360</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="plugins/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/nivo-lightbox.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
